@@ -1,0 +1,22 @@
+{
+    "name": "potime/yii2-cropper-widget",
+    "description": "Yii2 Bootstrap Cropper Input Widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","cropper","widget"],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "iVan",
+        "email": "ivan@potime.com"
+      }
+    ],
+    "require": {
+      "yiisoft/yii2": "*",
+      "yiisoft/yii2-bootstrap": "*"
+    },
+    "autoload": {
+      "psr-4": {
+        "potime\\cropper\\": "src/"
+      }
+    }
+}
