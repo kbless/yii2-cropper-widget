@@ -12,6 +12,7 @@
 /** @var $jsOptions mixed */
 /** @var $template string */
 /** @var $noImage string */
+/** @var $uploadOptions mixed */
 
 
 use yii\bootstrap\Html;
