@@ -72,7 +72,11 @@ class Cropper extends InputWidget
 
 
     /**
-     * title string Motal header title
+     * title string Modal header title
+     *
+     * tips bool Show help tips, default false
+     *
+     * extendInfo bool Display extension information, default false
      *
      * labels array
      *     [
@@ -131,6 +135,7 @@ class Cropper extends InputWidget
         $this->i18n();
         $this->setJsOptions();
         $this->setCropperOptions();
+        $this->setModalOptions();
         $this->setInputLabel();
         if($this->uploadOptions['url']){
             $this->setUploadOptions();
@@ -220,6 +225,16 @@ class Cropper extends InputWidget
         if (!isset($options['icons']['delete'])) $options['icons']['delete'] = '<i class="fa fa-trash"></i>';
 
         $this->cropperOptions = $options;
+    }
+
+    private function setModalOptions()
+    {
+        $options = $this->modalOptions;
+
+        if ($options['tips'] !== true) $options['tips'] = false;
+        if ($options['extendInfo'] !== true) $options['extendInfo'] = false;
+
+        $this->modalOptions = $options;
     }
 
     private function getPreviewSizes($options)

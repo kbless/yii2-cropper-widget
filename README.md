@@ -166,6 +166,9 @@ Advanced usage in _form file
     'modalOptions' => [
             'title' => 'Image Crop Editor', // Modal header Title
             
+            'tips' => true, // default false
+            'extendInfo' => true, // default false
+            
             // optional // defaults following code
             // you can customize 
             'labels' => [ // default name
