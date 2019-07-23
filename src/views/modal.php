@@ -9,15 +9,15 @@
 /** @var $modalOptions [] */
 
 $modalLabel = $modalOptions['title'] ?? Yii::t('cropper', 'Image Crop Editor');
-$browseLabel = $cropperOptions['icons']['browse'] . ' ' . ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Browse'));
+$browseLabel = $cropperOptions['icons']['browse'] . ' ' . ($modalOptions['labels']['browse'] ?? Yii::t('cropper', 'Browse'));
 $cropLabel = $cropperOptions['icons']['crop'] . ' ' . ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Crop'));
-$closeLabel = $cropperOptions['icons']['close'] . ' ' .  ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Close'));
+$closeLabel = $cropperOptions['icons']['close'] . ' ' .  ($modalOptions['labels']['close'] ?? Yii::t('cropper', 'Close'));
 
 $cropWidth = $cropperOptions['width'];
 $cropHeight = $cropperOptions['height'];
 
-$cropReset=$cropperOptions['icons']['reset'] . ' ' .  ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Reset'));
-$cropDelete = $cropperOptions['icons']['delete'] . ' ' .  ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Delete'));
+$cropReset=$cropperOptions['icons']['reset'] . ' ' .  ($modalOptions['labels']['reset'] ?? Yii::t('cropper', 'Reset'));
+$cropDelete = $cropperOptions['icons']['delete'] . ' ' .  ($modalOptions['labels']['delete'] ?? Yii::t('cropper', 'Delete'));
 
 
 echo '<div class="modal fade" tabindex="-1" role="dialog" id="cropper-modal-'. $unique .'">'

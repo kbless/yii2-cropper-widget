@@ -40,11 +40,11 @@ switch ($jsOptions['pos']) {
 $cropWidth = $cropperOptions['width'];
 $cropHeight = $cropperOptions['height'];
 $aspectRatio = $cropWidth / $cropHeight;
-$browseLabel = $cropperOptions['icons']['browse'] . ' ' . ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Browse'));
+$browseLabel = $cropperOptions['icons']['browse'] . ' ' . ($modalOptions['labels']['browse'] ?? Yii::t('cropper', 'Browse'));
 $cropLabel = $cropperOptions['icons']['crop'] . ' ' . ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Crop'));
-$closeLabel = $cropperOptions['icons']['close'] . ' ' . ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Crop') . ' & ' . Yii::t('cropper', 'Close'));
-$cropReset=$cropperOptions['icons']['reset'] . ' ' .  ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Reset'));
-$cropDelete=$cropperOptions['icons']['delete'] . ' ' .  ($modalOptions['labels']['crop'] ?? Yii::t('cropper', 'Delete'));
+$closeLabel = $cropperOptions['icons']['close'] . ' ' . ($modalOptions['labels']['close'] ?? Yii::t('cropper', 'Crop') . ' & ' . Yii::t('cropper', 'Close'));
+$cropReset=$cropperOptions['icons']['reset'] . ' ' .  ($modalOptions['labels']['reset'] ?? Yii::t('cropper', 'Reset'));
+$cropDelete=$cropperOptions['icons']['delete'] . ' ' .  ($modalOptions['labels']['delete'] ?? Yii::t('cropper', 'Delete'));
 $uploadUrl=$uploadOptions['url'];
 $uploadMethod=$uploadOptions['method'];
 $uploadResponse=$uploadOptions['response'];
