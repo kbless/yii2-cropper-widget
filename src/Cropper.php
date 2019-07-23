@@ -167,6 +167,7 @@ class Cropper extends InputWidget
             'uniqueId' => $this->uniqueId,
             'imageUrl' => $this->imageUrl,
             'cropperOptions' => $this->cropperOptions,
+            'modalOptions' => $this->modalOptions,
             'uploadOptions' => $this->uploadOptions,
             'jsOptions' => $this->jsOptions,
             'template' => $this->template,
